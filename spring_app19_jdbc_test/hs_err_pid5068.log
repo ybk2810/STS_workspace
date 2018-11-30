@@ -1,0 +1,248 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes for ChunkPool::allocate
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:273), pid=5068, tid=0x0000000000002b5c
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_171-b11) (build 1.8.0_171-b11)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.171-b11 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000248f800):  JavaThread "main" [_thread_in_vm, id=11100, stack(0x0000000002740000,0x0000000002840000)]
+
+Stack: [0x0000000002740000,0x0000000002840000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J 732  java.lang.ClassLoader.defineClass1(Ljava/lang/String;[BIILjava/security/ProtectionDomain;Ljava/lang/String;)Ljava/lang/Class; (0 bytes) @ 0x0000000002b0785f [0x0000000002b077c0+0x9f]
+j  java.lang.ClassLoader.defineClass(Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class;+27
+J 541 C1 java.net.URLClassLoader.defineClass(Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class; (142 bytes) @ 0x0000000002a94054 [0x0000000002a92580+0x1ad4]
+J 408 C1 java.net.URLClassLoader$1.run()Ljava/lang/Class; (63 bytes) @ 0x0000000002a1ecec [0x0000000002a1ea20+0x2cc]
+J 407 C1 java.net.URLClassLoader$1.run()Ljava/lang/Object; (5 bytes) @ 0x0000000002a1f40c [0x0000000002a1f380+0x8c]
+v  ~StubRoutines::call_stub
+J 493  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object; (0 bytes) @ 0x0000000002a79326 [0x0000000002a792c0+0x66]
+J 405 C1 java.net.URLClassLoader.findClass(Ljava/lang/String;)Ljava/lang/Class; (47 bytes) @ 0x0000000002a22444 [0x0000000002a222c0+0x184]
+J 304 C1 java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class; (122 bytes) @ 0x00000000029dff4c [0x00000000029df600+0x94c]
+J 332 C1 sun.misc.Launcher$AppClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class; (85 bytes) @ 0x00000000029ecdcc [0x00000000029ec440+0x98c]
+J 331 C1 java.lang.ClassLoader.loadClass(Ljava/lang/String;)Ljava/lang/Class; (7 bytes) @ 0x00000000029e9d44 [0x00000000029e9c40+0x104]
+v  ~StubRoutines::call_stub
+J 732  java.lang.ClassLoader.defineClass1(Ljava/lang/String;[BIILjava/security/ProtectionDomain;Ljava/lang/String;)Ljava/lang/Class; (0 bytes) @ 0x0000000002b0785f [0x0000000002b077c0+0x9f]
+j  java.lang.ClassLoader.defineClass(Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class;+27
+J 541 C1 java.net.URLClassLoader.defineClass(Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class; (142 bytes) @ 0x0000000002a94054 [0x0000000002a92580+0x1ad4]
+J 408 C1 java.net.URLClassLoader$1.run()Ljava/lang/Class; (63 bytes) @ 0x0000000002a1ecec [0x0000000002a1ea20+0x2cc]
+J 407 C1 java.net.URLClassLoader$1.run()Ljava/lang/Object; (5 bytes) @ 0x0000000002a1f40c [0x0000000002a1f380+0x8c]
+v  ~StubRoutines::call_stub
+J 493  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object; (0 bytes) @ 0x0000000002a79326 [0x0000000002a792c0+0x66]
+J 405 C1 java.net.URLClassLoader.findClass(Ljava/lang/String;)Ljava/lang/Class; (47 bytes) @ 0x0000000002a22444 [0x0000000002a222c0+0x184]
+J 304 C1 java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class; (122 bytes) @ 0x00000000029dff4c [0x00000000029df600+0x94c]
+J 332 C1 sun.misc.Launcher$AppClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class; (85 bytes) @ 0x00000000029ecdcc [0x00000000029ec440+0x98c]
+J 331 C1 java.lang.ClassLoader.loadClass(Ljava/lang/String;)Ljava/lang/Class; (7 bytes) @ 0x00000000029e9d44 [0x00000000029e9c40+0x104]
+v  ~StubRoutines::call_stub
+j  java.lang.Class.forName0(Ljava/lang/String;ZLjava/lang/ClassLoader;Ljava/lang/Class;)Ljava/lang/Class;+0
+j  java.lang.Class.forName(Ljava/lang/String;)Ljava/lang/Class;+11
+j  oracle.jdbc.driver.OracleDriver.connect(Ljava/lang/String;Ljava/util/Properties;)Ljava/sql/Connection;+126
+j  java.sql.DriverManager.getConnection(Ljava/lang/String;Ljava/util/Properties;Ljava/lang/Class;)Ljava/sql/Connection;+171
+j  java.sql.DriverManager.getConnection(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;+37
+j  kr.co.acorn.app.dao.OracleDAO.init()V+23
+v  ~StubRoutines::call_stub
+j  sun.reflect.NativeMethodAccessorImpl.invoke0(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+0
+j  sun.reflect.NativeMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+100
+j  sun.reflect.DelegatingMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+6
+j  java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+56
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/beans/factory/support/RootBeanDefinition;)V+297
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/beans/factory/support/RootBeanDefinition;)V+167
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/beans/factory/support/RootBeanDefinition;)Ljava/lang/Object;+59
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+245
+j  org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+169
+j  org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;+4
+j  org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$8.getObject()Ljava/lang/Object;+16
+j  org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(Ljava/lang/String;Lorg/springframework/beans/factory/ObjectFactory;)Ljava/lang/Object;+132
+j  org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Object;Z)Ljava/lang/Object;+453
+j  org.springframework.beans.factory.support.AbstractBeanFactory.getBean(Ljava/lang/String;)Ljava/lang/Object;+5
+j  org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons()V+248
+j  org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V+124
+j  org.springframework.context.support.AbstractApplicationContext.refresh()V+54
+j  org.springframework.context.support.ClassPathXmlApplicationContext.<init>([Ljava/lang/String;ZLorg/springframework/context/ApplicationContext;)V+15
+j  org.springframework.context.support.ClassPathXmlApplicationContext.<init>(Ljava/lang/String;)V+11
+j  kr.co.acorn.app.test.TestMain.main([Ljava/lang/String;)V+6
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000000005736b800 JavaThread "Abandoned connection cleanup thread" daemon [_thread_blocked, id=13620, stack(0x000000005a0f0000,0x000000005a1f0000)]
+  0x00000000573ab000 JavaThread "Service Thread" daemon [_thread_blocked, id=15732, stack(0x0000000059410000,0x0000000059510000)]
+  0x00000000573a6000 JavaThread "C1 CompilerThread2" daemon [_thread_blocked, id=11580, stack(0x0000000059310000,0x0000000059410000)]
+  0x00000000573a5000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=15812, stack(0x00000000590a0000,0x00000000591a0000)]
+  0x0000000057351000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=15488, stack(0x0000000058f10000,0x0000000059010000)]
+  0x0000000057345800 JavaThread "Attach Listener" daemon [_thread_blocked, id=15760, stack(0x0000000058d80000,0x0000000058e80000)]
+  0x0000000057314000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=14592, stack(0x0000000058b20000,0x0000000058c20000)]
+  0x0000000057302000 JavaThread "Finalizer" daemon [_thread_blocked, id=13932, stack(0x0000000058980000,0x0000000058a80000)]
+  0x00000000572bb000 JavaThread "Reference Handler" daemon [_thread_blocked, id=9128, stack(0x00000000587d0000,0x00000000588d0000)]
+=>0x000000000248f800 JavaThread "main" [_thread_in_vm, id=11100, stack(0x0000000002740000,0x0000000002840000)]
+
+Other Threads:
+  0x00000000572b3800 VMThread [stack: 0x00000000586d0000,0x00000000587d0000] [id=2812]
+  0x00000000573cf000 WatcherThread [stack: 0x0000000059570000,0x0000000059670000] [id=6264]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 38400K, used 19633K [0x00000000d5e00000, 0x00000000d8880000, 0x0000000100000000)
+  eden space 33280K, 58% used [0x00000000d5e00000,0x00000000d712c7b0,0x00000000d7e80000)
+  from space 5120K, 0% used [0x00000000d8380000,0x00000000d8380000,0x00000000d8880000)
+  to   space 5120K, 0% used [0x00000000d7e80000,0x00000000d7e80000,0x00000000d8380000)
+ ParOldGen       total 87552K, used 0K [0x0000000081a00000, 0x0000000086f80000, 0x00000000d5e00000)
+  object space 87552K, 0% used [0x0000000081a00000,0x0000000081a00000,0x0000000086f80000)
+ Metaspace       used 12524K, capacity 12732K, committed 12800K, reserved 1060864K
+  class space    used 1456K, capacity 1514K, committed 1536K, reserved 1048576K
+
+Card table byte_map: [0x0000000011c00000,0x0000000012000000] byte_map_base: 0x00000000117f3000
+
+Marking Bits: (ParMarkBitMap*) 0x00000000673b08c0
+ Begin Bits: [0x0000000012600000, 0x0000000014598000)
+ End Bits:   [0x0000000014598000, 0x0000000016530000)
+
+Polling page: 0x0000000001c50000
+
+CodeCache: size=245760Kb used=2885Kb max_used=2885Kb free=242874Kb
+ bounds [0x0000000002840000, 0x0000000002b20000, 0x0000000011840000]
+ total_blobs=1086 nmethods=741 adapters=258
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 31.093 Thread 0x00000000573a6000  737       3       sun.misc.URLClassPath$JarLoader$2::getInputStream (15 bytes)
+Event: 31.093 Thread 0x00000000573a6000 nmethod 737 0x0000000002b0ffd0 code [0x0000000002b10140, 0x0000000002b10368]
+Event: 31.093 Thread 0x00000000573a6000  738       3       sun.misc.URLClassPath$JarLoader$2::getContentLength (9 bytes)
+Event: 31.093 Thread 0x00000000573a6000 nmethod 738 0x0000000002b10450 code [0x0000000002b105c0, 0x0000000002b107f0]
+Event: 31.093 Thread 0x00000000573a6000  739       3       sun.misc.URLClassPath$JarLoader$2::getCodeSigners (8 bytes)
+Event: 31.093 Thread 0x00000000573a6000 nmethod 739 0x0000000002b108d0 code [0x0000000002b10a40, 0x0000000002b10c68]
+Event: 31.093 Thread 0x00000000573a6000  740   !   3       java.util.jar.JarFile$JarFileEntry::getCodeSigners (78 bytes)
+Event: 31.093 Thread 0x00000000573a6000 nmethod 740 0x0000000002b10d10 code [0x0000000002b10ee0, 0x0000000002b114b8]
+Event: 31.471 Thread 0x00000000573a6000  741       3       java.security.CodeSource::matchCerts (254 bytes)
+Event: 31.472 Thread 0x00000000573a6000 nmethod 741 0x0000000002b11710 code [0x0000000002b11920, 0x0000000002b12478]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (5 events):
+Event: 6.868 Thread 0x000000000248f800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002984928 method=java.lang.String.startsWith(Ljava/lang/String;I)Z @ 25
+Event: 7.578 Thread 0x000000000248f800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00000000029e8438 method=java.lang.String.indexOf([CII[CIII)I @ 3
+Event: 12.236 Thread 0x000000000248f800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00000000029f2980 method=java.lang.CharacterData.of(I)Ljava/lang/CharacterData; @ 4
+Event: 28.675 Thread 0x000000000248f800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002a536ac method=java.lang.AbstractStringBuilder.append(Ljava/lang/String;)Ljava/lang/AbstractStringBuilder; @ 1
+Event: 28.677 Thread 0x000000005736b800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002a4d85c method=java.util.zip.ZipCoder.getBytes(Ljava/lang/String;)[B @ 32
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 28.675 Thread 0x000000000248f800 Implicit null exception at 0x0000000002a53306 to 0x0000000002a53695
+Event: 28.819 Thread 0x000000000248f800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d6dbf428) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u171\10807\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 28.819 Thread 0x000000000248f800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d6dc01a0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u171\10807\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 28.819 Thread 0x000000000248f800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d6dc1340) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u171\10807\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 28.820 Thread 0x000000000248f800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d6dc2d10) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u171\10807\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 28.829 Thread 0x000000000248f800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d6de9278) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u171\10807\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 28.830 Thread 0x000000000248f800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d6dea640) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u171\10807\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 28.830 Thread 0x000000000248f800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d6deb8a8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u171\10807\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 28.836 Thread 0x000000000248f800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d6e11ba8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u171\10807\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+Event: 28.843 Thread 0x000000000248f800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x00000000d6e24728) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u171\10807\hotspot\src\share\vm\runtime\sharedRuntime.cpp, line 605]
+
+Events (10 events):
+Event: 31.417 loading class oracle/jdbc/driver/T4CPreparedStatement
+Event: 31.417 loading class oracle/jdbc/driver/T4CPreparedStatement done
+Event: 31.472 loading class oracle/jdbc/driver/OracleCallableStatement
+Event: 31.472 loading class oracle/jdbc/driver/OracleCallableStatement done
+Event: 31.509 loading class oracle/jdbc/internal/OracleCallableStatement
+Event: 31.509 loading class oracle/jdbc/internal/OracleCallableStatement done
+Event: 31.577 loading class oracle/jdbc/OracleCallableStatement
+Event: 31.577 loading class oracle/jdbc/OracleCallableStatement done
+Event: 31.704 loading class java/sql/CallableStatement
+Event: 31.705 loading class java/sql/CallableStatement done
+
+
+Dynamic libraries:
+0x000000013f330000 - 0x000000013f367000 	C:\Program Files\Java\jdk1.8.0_171\bin\javaw.exe
+0x0000000077bf0000 - 0x0000000077d8f000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00000000779d0000 - 0x0000000077aef000 	C:\Windows\system32\kernel32.dll
+0x000007fefd9b0000 - 0x000007fefda1a000 	C:\Windows\system32\KERNELBASE.dll
+0x000007feffa40000 - 0x000007feffb1b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007feffb50000 - 0x000007feffbef000 	C:\Windows\system32\msvcrt.dll
+0x000007feff0f0000 - 0x000007feff10f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007feff250000 - 0x000007feff37d000 	C:\Windows\system32\RPCRT4.dll
+0x0000000077af0000 - 0x0000000077bea000 	C:\Windows\system32\USER32.dll
+0x000007feffcd0000 - 0x000007feffd37000 	C:\Windows\system32\GDI32.dll
+0x000007feff240000 - 0x000007feff24e000 	C:\Windows\system32\LPK.dll
+0x000007feff6f0000 - 0x000007feff7bb000 	C:\Windows\system32\USP10.dll
+0x000007fefbe20000 - 0x000007fefc014000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_fa3b1e3d17594757\COMCTL32.dll
+0x000007feffbf0000 - 0x000007feffc61000 	C:\Windows\system32\SHLWAPI.dll
+0x000007feffb20000 - 0x000007feffb4e000 	C:\Windows\system32\IMM32.DLL
+0x000007fefdb50000 - 0x000007fefdc59000 	C:\Windows\system32\MSCTF.dll
+0x00000000735d0000 - 0x00000000736a2000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\msvcr100.dll
+0x0000000066b90000 - 0x0000000067430000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\server\jvm.dll
+0x000007fef82d0000 - 0x000007fef82d9000 	C:\Windows\system32\WSOCK32.dll
+0x000007feff1f0000 - 0x000007feff23d000 	C:\Windows\system32\WS2_32.dll
+0x000007feffd40000 - 0x000007feffd48000 	C:\Windows\system32\NSI.dll
+0x000007fef9040000 - 0x000007fef907b000 	C:\Windows\system32\WINMM.dll
+0x000007fefc690000 - 0x000007fefc69c000 	C:\Windows\system32\VERSION.dll
+0x0000000077d90000 - 0x0000000077d97000 	C:\Windows\system32\PSAPI.DLL
+0x0000000074c80000 - 0x0000000074c8f000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\verify.dll
+0x0000000074c50000 - 0x0000000074c79000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\java.dll
+0x0000000074c30000 - 0x0000000074c46000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\zip.dll
+0x000007fefe160000 - 0x000007fefeeeb000 	C:\Windows\system32\SHELL32.dll
+0x000007fefeef0000 - 0x000007feff0ed000 	C:\Windows\system32\ole32.dll
+0x000007fefd7a0000 - 0x000007fefd7af000 	C:\Windows\system32\profapi.dll
+0x0000000074b90000 - 0x0000000074b9d000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\management.dll
+0x0000000074c10000 - 0x0000000074c2a000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\net.dll
+0x000007fefcf20000 - 0x000007fefcf75000 	C:\Windows\system32\mswsock.dll
+0x000007fefcf10000 - 0x000007fefcf17000 	C:\Windows\System32\wship6.dll
+0x0000000074bf0000 - 0x0000000074c01000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\nio.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 
+java_command: kr.co.acorn.app.test.TestMain
+java_class_path (initial): C:\Program Files\Java\jdk1.8.0_171\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\zipfs.jar;C:\Dropbox\sts_workspace\spring_app19_jdbc_test\target\classes;C:\Users\acorn\.m2\repository\org\springframework\spring-context\5.0.8.RELEASE\spring-context-5.0.8.RELEASE.jar;C:\Users\acorn\.m2\repository\org\springframework\spring-aop\5.0.8.RELEASE\spring-aop-5.0.8.RELEASE.jar;C:\Users\acorn\.m2\repository\org\springframework\spring-beans\5.0.8.RELEASE\spring-beans-5.0.8.RELEASE.jar;C:\Users\acorn\.m2\repository\org\springframework\spring-core\5.0.8.RELEASE\spring-core-5.0.8.RELEASE.jar;C:\Users\acorn\.m2\repository\org\springframework\spring-jcl\5.0.8.RELEASE\spring-jcl-5.0.8.RELEASE.jar;C:\Users\acorn\.m2\repository\org\springframework\spring-expression\5.0.8.RELEASE\spring-expression-5.0.8.RELEASE.jar;C:\Users\acorn\.m2\repository\com\oracle\ojdbc6\11.2.0.3\ojdbc6-11.2.0.3.jar;C:\Users\acorn\.m2\repository\mysql\mysql-connector-java\8.0.12\mysql-connector-java-8.0.12.jar;C:\Users\acorn\.m2\repository\com\google\
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_171
+CLASSPATH=.
+PATH=C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_171/bin/../jre/lib/amd64;C:\tomcat9\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\app\acorn\product\11.2.0\dbhome_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Bandizip\;C:\sts-bundle\sts-3.9.5.RELEASE;
+USERNAME=acorn
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.24214)
+
+CPU:total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, erms, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 8280248k(632364k free), swap 32464792k(19900k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.171-b11) for windows-amd64 JRE (1.8.0_171-b11), built on Mar 28 2018 16:06:12 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Tue Aug 28 12:40:20 2018
+elapsed time: 31 seconds (0d 0h 0m 31s)
+

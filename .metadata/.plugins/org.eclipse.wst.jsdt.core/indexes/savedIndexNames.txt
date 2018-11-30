@@ -1,0 +1,16 @@
+INDEX VERSION 1.4+C:\Dropbox\sts_workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3234465557.index
+3195763624.index
+3349660428.index
+698982944.index
+2736313112.index
+784623161.index
+2203524015.index
+3083679619.index
+1588499126.index
+3675393343.index
+2847654619.index
+4118492120.index
+3447348508.index
+3380366142.index
+3753455010.index

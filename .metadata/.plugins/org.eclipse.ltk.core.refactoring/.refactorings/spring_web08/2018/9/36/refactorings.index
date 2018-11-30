@@ -1,0 +1,5 @@
+1535939007225	Rename resource 'spring_ctx.xml'
+1535953516006	Move 'step1.jsp' to 'register'
+1535953567271	Move 'step1.jsp' to 'WebContent'
+1535953817613	Delete element
+1535955583183	Rename package 'kr.co.acorn.web.dto'

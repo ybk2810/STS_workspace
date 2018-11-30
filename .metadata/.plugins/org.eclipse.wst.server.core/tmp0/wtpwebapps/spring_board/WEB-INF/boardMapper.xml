@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.acorn.board">
+	<select id="selectAll" resultType="bdto" parameterType="se">
+		SELECT bno, writer, title, contents, hits, regdate 
+		FROM(SELECT ROWNUM RN, bno, writer, title, contents, hits, regdate 
+		FROM(SELECT bno, writer, title, contents, hits, to_char(regdate, 'yyyy/mm/dd') regdate FROM board
+		ORDER BY bno DESC)) WHERE RN &gt;=#{startNo} AND RN &lt;=#{endNo}
+	</select>
+	
+	
+	<insert id="insertOne" parameterType="bdto">
+		INSERT INTO board VALUES(
+		BOARD_BNO_SEQ.nextval, #{writer}, #{title}, #{contents}, 0, sysdate, 0)
+	</insert>
+	
+	<select id="selectOne" parameterType="int" resultType="bdto">
+		SELECT bno, writer, title, contents, hits, to_char(regdate, 'yyyy/mm/dd') regdate FROM board
+		WHERE bno = #{bno}
+	</select>
+	
+	<update id="updateOne" parameterType="bdto">
+		UPDATE board SET writer = #{writer}, title = #{title}, contents = #{contents}
+		WHERE bno = #{bno}
+	</update>
+	
+	<delete id="deleteOne" parameterType="bdto">
+		DELETE FROM board
+		WHERE bno = #{bno}
+	</delete>
+	
+	<update id="raiseHits" parameterType="int">
+		UPDATE board SET hits = hits+1
+		WHERE bno = #{bno}
+	</update>
+	
+	<select id="count" resultType="int">
+		SELECT COUNT(*) FROM board
+	</select>
+	
+</mapper>
+
+

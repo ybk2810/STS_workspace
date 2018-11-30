@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 스프링 컨테이너에게 위임할 빈을 등록 : app.xml -->
+
+	<!-- Handler Mapping -->
+	<bean id="" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"></bean>
+	
+	<!-- controller bean 등록 -->
+	<bean id="/welcome.do" class="spring_web01.WelcomeController"></bean>
+	<bean id="/helloKr.do" class="spring_web01.HelloController"></bean>
+	
+	<!-- View resolver -->
+	<bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+</beans>

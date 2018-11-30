@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring_web02"/>
+<aop-project name="spring_board"/>
+<aop-project name="spring_app5"/>
+<aop-project name="spring_app9"/>
+<aop-project name="spring_app16_javaConf_hw"/>
+<aop-project name="spring_aop06"/>
+<aop-project name="spring_aop02"/>
+<aop-project name="spring_web05"/>
+<aop-project name="spring_web01"/>
+<aop-project name="spring_web09"/>
+<aop-project name="spring_aop07_aspectj">
+<aspect-definition advice-class-name="kr.co.acorn.aop.checkTime" advice-method-name="logAround" advice-type="AROUND" aspect-end-line-number="19" aspect-name="ct" aspect-start-line-number="19" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/spring_aop07_aspectj/src/app.xml" pointcut-expression="execution(public * printName(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_aop07_aspectj|3:src/app.xml|7:beans:6|8:cs:9" bean-file="/spring_aop07_aspectj/src/app.xml" bean-start-line="9" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_aop07_aspectj/src/app.xml" source="=spring_aop07_aspectj/src&lt;kr.co.acorn.aop{checkTime.java[checkTime~logAround~QProceedingJoinPoint;" source-start-line="9" target="=spring_aop07_aspectj/src&lt;kr.co.acorn.aop{CustomerServiceImple.java[CustomerServiceImple~printName" target-start-line="25"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="spring_app8"/>
+<aop-project name="spring_aop01"/>
+<aop-project name="spring_app17_lifeCycle"/>
+<aop-project name="spring_aop09">
+<aspect-definition advice-class-name="kr.co.acorn.aop.CheckTime" advice-method-name="logAround(org.aspectj.lang.ProceedingJoinPoint)" advice-type="AROUND" aspect-end-line-number="8" aspect-name="ct" aspect-start-line-number="8" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/spring_aop09/src/app.xml" pointcut-expression="publicTarget()" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring_aop09|3:src/app.xml|7:beans:6|8:cs:10" bean-file="/spring_aop09/src/app.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_aop09/src/app.xml" source="=spring_aop09/src&lt;kr.co.acorn.aop{CheckTime.java[CheckTime~logAround~QProceedingJoinPoint;" source-start-line="14" target="=spring_aop09/src&lt;kr.co.acorn.aop{CustomerServiceImple.java[CustomerServiceImple~printName" target-start-line="25"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="spring_app18_DaoBean"/>
+<aop-project name="spring_web04"/>
+<aop-project name="spring_web08"/>
+<aop-project name="spring_app19_jdbc_test"/>
+<aop-project name="spring_app7"/>
+<aop-project name="spring_app20_mybatis"/>
+<aop-project name="spring_aop04"/>
+<aop-project name="spring_aop08">
+<aspect-definition advice-class-name="kr.co.acorn.aop.FireLog" advice-method-name="doAspect" advice-type="AFTER_RETURNING" aspect-end-line-number="15" aspect-name="fl" aspect-start-line-number="15" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/spring_aop08/src/app.xml" pointcut-expression="execution (public void fire())" proxy-target-class="false">
+<aop-reference advice-type="AFTER_RETURNING" bean="1:BeansModel|2:spring_aop08|3:src/app.xml|7:beans:6|8:w:8" bean-file="/spring_aop08/src/app.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring_aop08/src/app.xml" source="=spring_aop08/src&lt;kr.co.acorn.aop{FireLog.java[FireLog~doAspect~QJoinPoint;" source-start-line="11" target="=spring_aop08/src&lt;kr.co.acorn.aop{WeaponImple.java[WeaponImple~fire" target-start-line="11"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="spring_web03"/>
+<aop-project name="spring_web07"/>
+<aop-project name="spring_web10"/>
+<aop-project name="spring_app14_anno"/>
+<aop-project name="spring_app10"/>
+<aop-project name="spring_aop05_around"/>
+<aop-project name="spring_app13_anno"/>
+<aop-project name="spring_app12_anno"/>
+<aop-project name="spring_app11_anno"/>
+<aop-project name="spring_app6"/>
+<aop-project name="spring_app2"/>
+<aop-project name="spring_aop03"/>
+</aop-reference-model>

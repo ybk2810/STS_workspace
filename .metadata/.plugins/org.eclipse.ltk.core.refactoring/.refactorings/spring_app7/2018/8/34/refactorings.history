@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;dto.DeptDAO&apos; to &apos;DeptDTO&apos;&#x0D;&#x0A;- Original project: &apos;spring_app7&apos;&#x0D;&#x0A;- Original element: &apos;dto.DeptDAO&apos;&#x0D;&#x0A;- Renamed element: &apos;dto.DeptDTO&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DeptDAO&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;dto{DeptDAO.java[DeptDAO" matchStrategy="1" name="DeptDTO" qualified="false" references="true" similarDeclarations="false" stamp="1535090776564" textual="false" version="1.0"/>
+</session>

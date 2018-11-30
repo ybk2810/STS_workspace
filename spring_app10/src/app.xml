@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="c" class="kr.co.acorn.app.CollectionImple">
+		<constructor-arg name="list">
+			<list>
+				<value>반장님</value>
+				<value>동기씨</value>
+				<value>태종띠</value>
+				<value>리리랜드</value>
+				<value>영복띠</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg name="map">
+			<map>
+				<entry>
+					<key>
+						<value>요술공주밍키</value>
+					</key>
+					<value>교통사고사망</value>
+				</entry>
+				<entry>
+					<key>
+						<value>둘리</value>
+					</key>
+					<value>공룡</value>
+				</entry>
+				<entry>
+					<key>
+						<value>슈퍼맨</value>
+					</key>
+					<value>외계인</value>
+				</entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+</beans>

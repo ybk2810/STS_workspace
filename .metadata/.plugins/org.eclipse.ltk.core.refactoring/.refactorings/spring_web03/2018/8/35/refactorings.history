@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Move &apos;spring5.xml&apos; to &apos;WEB-INF&apos;" description="Move &apos;spring5.xml&apos; to &apos;WEB-INF&apos;" destination="WebContent/WEB-INF" element1="WebContent/spring5.xml" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1535615679183" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;spring_web03/WebContent/WEB-INF/spring5.xml&apos; to &apos;spring5-servlet.xml&apos;" description="Rename resource &apos;spring5.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/WEB-INF/spring5.xml" name="spring5-servlet.xml" stamp="1535616772968" updateReferences="true"/>
+</session>

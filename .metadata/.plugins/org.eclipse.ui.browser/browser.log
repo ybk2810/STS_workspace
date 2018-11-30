@@ -1,0 +1,28 @@
+
+9월 03, 2018 13:08:31.07 NEW SESSION
+9월 03, 2018 13:08:31.07 [468:5896:0903/130831.019:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9월 03, 2018 13:08:31.08 [468:6304:0903/130831.085:ERROR:component_installer.cc(324)] Failed to read manifest or verify installation for Signed Tree Heads (C:\Users\acorn\AppData\Local\Google\Chrome\User Data\CertificateTransparency\861).: 지정된 파일을 찾을 수 없습니다. (0x2)
+9월 03, 2018 13:09:16.01 Unable to read VR Path Registry from C:\Users\acorn\AppData\Local\openvr\openvrpaths.vrpath
+9월 03, 2018 13:14:04.18 Unable to read VR Path Registry from C:\Users\acorn\AppData\Local\openvr\openvrpaths.vrpath
+9월 03, 2018 14:40:29.67 [6896:4024:0903/144029.671:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+9월 03, 2018 16:10:22.63 [6896:4024:0903/161022.629:ERROR:latency_info.cc(163)] Surface::TakeLatencyInfoFromFrame, LatencyInfo vector size 102 is too big.
+
+9월 04, 2018 12:01:11.67 NEW SESSION
+9월 04, 2018 12:01:11.67 Unable to read VR Path Registry from C:\Users\acorn\AppData\Local\openvr\openvrpaths.vrpath
+9월 04, 2018 14:37:09.74 [2220:5328:0904/143704.624:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+9월 04, 2018 14:37:09.80 [2220:4432:0904/143705.623:ERROR:connection_factory_impl.cc(403)] Failed to connect to MCS endpoint with error -106
+9월 04, 2018 16:51:23.82 [2220:5328:0904/165123.820:ERROR:textfield.cc(1754)] NOT IMPLEMENTED
+
+9월 05, 2018 12:10:15.20 NEW SESSION
+9월 05, 2018 12:10:15.20 [5964:3336:0905/121015.202:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9월 05, 2018 12:10:15.21 [5964:3336:0905/121015.202:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9월 05, 2018 12:10:15.21 [5964:3336:0905/121015.202:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9월 05, 2018 12:10:15.23 [5964:3336:0905/121015.202:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9월 05, 2018 12:11:00.20 Unable to read VR Path Registry from C:\Users\acorn\AppData\Local\openvr\openvrpaths.vrpath
+9월 05, 2018 13:27:52.76 [5964:4448:0905/132752.766:ERROR:get_updates_processor.cc(243)] PostClientToServerMessage() failed during GetUpdates
+9월 05, 2018 14:37:57.51 [5964:4448:0905/143757.515:ERROR:get_updates_processor.cc(243)] PostClientToServerMessage() failed during GetUpdates
+9월 05, 2018 14:37:57.51 [5964:4448:0905/143757.515:ERROR:get_updates_processor.cc(243)] PostClientToServerMessage() failed during GetUpdates
+9월 05, 2018 14:37:57.53 [5964:3336:0905/143757.531:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+9월 05, 2018 17:27:57.50 [5964:3336:0905/172757.500:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+9월 05, 2018 17:27:57.60 [5964:4020:0905/172757.609:ERROR:connection_factory_impl.cc(403)] Failed to connect to MCS endpoint with error -106
+9월 05, 2018 17:28:02.46 [5964:4020:0905/172759.933:ERROR:connection_factory_impl.cc(403)] Failed to connect to MCS endpoint with error -106

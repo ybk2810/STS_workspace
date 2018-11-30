@@ -1,0 +1,27 @@
+AOP(Aspect Oriented Programming) : 코드 삽입
+
+여러 객체에 공통으로 적용할 수 있는 기능을 분리 함으로써 재사용을 높여주는 프로그래밍 기법
+
+은행?
+
+핵심기능: 입금, 출금, 이체 ...
+
+공통기능: 로그인, 권한 검사, 감사 기록 ...
+
+OOP: JAVA, C++, c# ...
+AOI: AspectJ
+
+AOP 적용하는 방법
+1. 컴파일 시점에 코드를 핵심기능에 공통기능을 추가하는 방법
+2. 클래그 로딩시 바이트 코드에 공통 기능을 추가하는 방법
+3. 런타임시에 프록시 객체를 생성해서 공통기능을 추가하는 방법(spring)
+
+AOP 용어
+Target: 실질적인 비즈니스 로직을 구현하고 있는 코드
+Joinpoint: 메서드를 호출하는 시점
+Advice: JointPoint에서 실행되어야 하는 코드
+Pointcut: target클래스와 advice가 결합될 때 둘 사이의 결합규칙을 정의한 것
+Aspect: advice와 pointcut을 합친 것
+Weaving : joinpoint와 advice를 감싸는 과정
+
+

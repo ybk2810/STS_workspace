@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:mvc="http://www.springframework.org/schema/mvc"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+      http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+      http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+   <!-- kr.co.acorn 밑에 모든 패키지를 탐색해서 @ <- bean 등록해 -->
+   <!-- <context:component-scan base-package="kr.co.acorn.board.*" /> -->
+   
+   <bean id="hello" class="kr.co.acorn.board.control.HelloController"></bean>
+   <bean id="board" class="kr.co.acorn.board.control.BoardController">
+      <property name="bs" ref="service"></property>
+   </bean>
+   
+   <bean id="service" class="kr.co.acorn.board.service.BoardServiceImple">
+      <property name="dao" ref="dao"></property>
+   </bean>
+   
+   <bean id="dao" class="kr.co.acorn.board.dao.BoardOracleDao">
+      <property name="ss" ref="sqlSession"></property>
+   </bean>
+   
+   <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+      <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+      <property name="url" value="jdbc:oracle:thin:@192.168.0.206:1521:orcl" />
+      <property name="username" value="scott" />
+      <property name="password" value="tiger" />
+   </bean>
+   
+   <bean id="factory" class="org.mybatis.spring.SqlSessionFactoryBean">
+      <property name="dataSource" ref="dataSource" />
+      <property name="configLocation" value="/WEB-INF/sqlMapConfig.xml" />
+      <property name="mapperLocations" value="/WEB-INF/boardMapper.xml" />
+   </bean>
+   
+   <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+      <constructor-arg ref="factory" />
+   </bean>
+   
+   <mvc:annotation-driven />
+
+   <mvc:view-resolvers>
+      <mvc:jsp prefix="/WEB-INF/views/" suffix=".jsp" />
+   </mvc:view-resolvers>
+   
+   <mvc:default-servlet-handler/>
+
+</beans>

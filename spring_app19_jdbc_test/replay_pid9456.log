@@ -1,0 +1,22 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 111 ciObject found
+instanceKlass org/springframework/beans/PropertyEditorRegistry
+instanceKlass org/springframework/beans/factory/config/BeanDefinition
+instanceKlass org/springframework/beans/BeanMetadataElement
+instanceKlass org/springframework/core/AttributeAccessor
+instanceKlass org/springframework/core/SimpleAliasRegistry
+instanceKlass java/util/Formattable
+instanceKlass java/text/DateFormatSymbols
+instanceKlass sun/util/locale/provider/CalendarDataUtility$CalendarWeekParameterGetter
+instanceKlass sun/util/locale/provider/CalendarDataUtility
+instanceKlass java/util/Calendar$Builder
+instanceKlass java/util/Calendar
+instanceKlass java/util/Formatter$Conversion
+instanceKlass java/util/Formatter$FixedString
+instanceKlass java/util/Formatter$DateTime
+instanceKlass java/util/Formatter$Flags
+instanceKlass java/util/Formatter$FormatSpecifier
+instanceKlass java/util/Formatter$FormatString
+instanceKlass java/util/Currency$CurrencyNameGetter

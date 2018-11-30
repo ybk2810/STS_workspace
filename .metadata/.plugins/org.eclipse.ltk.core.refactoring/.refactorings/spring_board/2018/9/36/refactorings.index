@@ -1,0 +1,19 @@
+1536110331938	Move 'hello.jsp' to 'WEB-INF'
+1536110395855	Move 'hello.jsp' to 'views'
+1536110507679	Rename type 'Hellocontroller'
+1536110842387	Move 'views' to 'WebContent'
+1536112178434	Delete element
+1536113187599	Rename package 'kr.co.acorn.dto'
+1536113533986	Rename package 'kr.co.acorn.service'
+1536113546440	Rename package 'kr.co.acorn.Dao'
+1536114068675	Rename package 'kr.co.acorn.board.Dao'
+1536114133976	Rename compilation unit 'BardDTO.java'
+1536115563300	Delete element
+1536116241430	Rename package 'kr.co.acorn.board'
+1536196123197	Move 'writeForm.jsp' to 'views'
+1536289900645	Move 'views' to 'WEB-INF'
+1536290482380	Rename resource 'e.jpg'
+1536290492990	Copy file
+1536290501014	Rename resource 'e400.jpg'
+1536290544991	Copy file
+1536291766586	Move 'images' to 'WebContent'

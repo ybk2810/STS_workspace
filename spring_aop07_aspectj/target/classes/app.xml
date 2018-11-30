@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+	<bean id="ct" class="kr.co.acorn.aop.checkTime"></bean>
+	
+	<bean id="cs" class="kr.co.acorn.aop.CustomerServiceImple">
+		<property name="email" value="이메일"></property>
+		<property name="name" value="이름"></property>
+	</bean>
+<!-- aop설정 -->
+<aop:config>
+	<aop:aspect id="checkAspect" ref="ct">
+<!-- 	정확히 어디에 지정할것인지 설정 -->
+		<aop:pointcut expression="execution(public * printName(..))" id="checkPointcut"/>
+<!-- 		어떤방식으로 처리할 것인가 -->
+			<aop:around method="logAround" pointcut-ref="checkPointcut"/>
+	</aop:aspect>
+</aop:config>
+</beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- <bean id="w" class="kr.co.acorn.app.Gun">
+		<property name="bullet" value="6"></property>
+	</bean> -->
+	<bean id="w" class="kr.co.acorn.app.TaserGun">
+		<property name="battery" value="100"></property>
+	</bean>
+	<bean id="ch" class="kr.co.acorn.app.Police">
+	<property name="hp" value="100"></property>
+	<property name="w" ref="w"></property>
+		
+	</bean>
+
+</beans>
